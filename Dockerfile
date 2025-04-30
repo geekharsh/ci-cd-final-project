@@ -10,7 +10,7 @@ COPY pom.xml .
 COPY src ./src
 
 # Build the application without running tests
-RUN ./mvnw package -DskipTests
+RUN mvn package -DskipTests
 
 # Create a lightweight JRE image with the application
 FROM eclipse-temurin:21-jre-alpine
