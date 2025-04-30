@@ -32,7 +32,7 @@ RUN addgroup --system --gid 1001 appuser && \
 USER appuser
 
 # Set the PORT environment variable
-ENV PORT 8080
+ENV PORT 8000
 EXPOSE $PORT
 
 # Run the application
